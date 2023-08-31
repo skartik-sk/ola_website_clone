@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ola</title>
+  <link rel="stylesheet" href="/assets/index-ddaeab06.css">
+</head>
+
+<body>
+    <nav class="sticky top-0">
+        <header class="w-full h-16 bg-black drop-shadow-lg">
+            <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+                <!-- Logo Here -->
+                <a class="" href="#"><img
+                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-white-logo.svg" alt=""
+                        srcset=""></a>
+
+                <!-- Menu links here -->
+                <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-black z-50 text-white 
+                md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 md:items-center">
+
+                    <li class="md:hidden z-90 fixed top-4 right-6">
+                        <a href="javascript:void(0)" class="text-right text-white text-4xl"
+                            onclick="toggleMenu()">&times;</a>
+                    </li>
+
+                    <li>
+                        <a class="opacity-70 hover:opacity-100 duration-300" href="#">Ola s1</a>
+                    </li>
+                    <li>
+                        <a class=" opacity-70 hover:opacity-100 duration-300" href="#">Ola Electrical</a>
+                    </li>
+                    <li>
+                        <a class=" opacity-70 hover:opacity-100 duration-300" href="#">Ola Futurefactory</a>
+                    </li>
+
+                    <li>
+                        <button class="px-2 py-2 bg-gray-600 my-2">
+                            <a class=" opacity-70 hover:opacity-100 duration-300" href="#">Book an Ola cab</a>
+                        </button>
+                    </li>
+                    <li> <button class="px-2 py-2 bg-white text-black">
+
+                            <a class="opacity-70 hover:opacity-100 duration-300" href="#">Free S1 test ride</a>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- This is used to open the menu on mobile devices -->
+                <div class="flex items-center md:hidden">
+
+                    <button class="text-white text-2xl font-bold opacity-100 duration-300" onclick="toggleMenu()">
+                        &#9776;
+                    </button>
+                </div>
+
+        </header>
+    </nav>
+    <section>
+
+        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/hero-banner.webp" alt=""
+            class="md:object-cover w-full h-60">
+    </section>
+    <section>
+        <div class="my-3 md:mx-60 md:-mb-3 ">
+            <ul class="text-center flex justify-around md:justify-start">
+                <button class=" focus:border-b-2 text-black border-b-black  px-6 py-2  " id="start"   onclick="kuchtohoga('Daily')" onload="foo()">
+                    <li>Daily</li>
+                </button>
+                <button class="focus:border-b-2 border-b-black px-6 py-2" onclick="kuchtohoga('Rental')">
+                    <li>Rental</li>
+                </button>
+                <button class=" focus:border-b-2 border-b-black px-6  py-2" onclick="kuchtohoga('Outstation')">
+                    <li>Outstation</li>
+                </button>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class=" md:flex">
+
+
+            <section class="flex   justify-center">
+
+                <div class="flex w-fit md:ml-60  ">
+                    <div class="left   text-center -my-16   md:invisible">
+                        <p class="text-green-600 text-8xl   ">.</p>
+                        <div class="h-12 w-[3px] ml-2 bg-gray-400 "></div>
+                        <p class="text-red-700 text-8xl -my-16">.</p>
+                    </div>
+                    <div class="right text-center md:flex md:items-center">
+                        <div class="h-fit">
+                            <p class="md:text-green-600 md:text-8xl  hidden  md:block md:absolute md:-my-8 md:ml-3">
+                                .</p>
+                            <input type="text" name="" id="" placeholder="Current Location"
+                                class="py-2 px-2 my-2 outline-none md:border-[1px] md:border-gray-300 md:py-0 md:h-14 md:pl-10  md:my-6">
+                        </div>
+                        <hr class="bg-black md:invisible">
+                        <div class="invisible md:visible md:w-12 md:h-[3px] md:bg-gray-300"></div>
+                        <div class="h-fit">
+
+                            <p class="md:text-red-700 md:text-8xl  hidden md:block md:absolute md:-my-8 md:ml-3">.
+                            </p>
+                            <input type="text" name="" id="text" placeholder="Enter Destination"
+                                class="py-2 px-2 my-2 outline-none md:border-[1px] md:border-gray-300 md:py-0 md:h-14 md:pl-10 md:my-6">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex md:w-80 md:my-6">
+                    <button
+                        class=" p-4 m-7 w-full h-16  border-l-2      border-b-2 border-b-green-400    border-green-500 bg-gray-900 flex space-x-3 items-center md:m-0 md:ml-6">
+                        <span class="text-white"> SEARCH</span> <SPan class="text-green-500" id="text2">OLA CABS</SPan>
+                        <span class="text-end"><img
+                                src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/forward-arrow.svg" alt=""
+                                srcset=""></span>
+
+                    </button>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section>
+        <div class="md:hidden md:mx-52">
+
+            <div class="mx-6 my-1 ">
+                <img class="" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/banner-green-mob.png"
+                    alt="">
+            </div>
+        </div>
+        <div class="hidden md:block md:mx-52">
+            <div class="mx-6 my-1 ">
+                <img class="" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/banner-green-desktop.png"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="m-4 md:mx-52 md:my-20 ">
+
+
+            <p class=" text-2xl md:text-4xl font-bold md:text-center md:mx-20">Global mobility ecosystem driving
+                communities forward</p>
+            <div class="md:flex md:justify-between">
+
+
+
+                <div class="my-6 w-3/4">
+                    <div class="flex md:flex-col md:items-center md:w[300px]">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/cts-covered.svg"
+                            class="md:w-36" alt="  ">
+                        <div class="mx-3">
+                            <p class="font-bold text-xl md:mx-20 md:text-center"><span class="md:text-3xl md:font-bold">
+                                    250+ </span>cities</p>
+                            <p class="md:mx-10 md:text-center">Across India, Australia, New Zealand and the UK</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="my-6 w-3/4">
+                    <div class="flex md:flex-col md:items-center md:w[250px]">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/year-rides.svg"
+                            class="md:w-36" alt="  ">
+                        <div class="mx-3">
+                            <p class="font-bold text-xl md:mx-20 md:text-center"><span class="md:text-3xl md:font-bold">
+                                    55 Cr+</span> yearly rides</p>
+                            <p class="md:mx-10 md:text-center">
+
+                                Booked by our customers every year</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="my-6 w-3/4">
+                    <div class="flex md:flex-col md:items-center md:w[350px]">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/kms-covered.svg"
+                            class="md:w-36" alt="  ">
+                        <div class="mx-3">
+                            <p class="font-bold text-xl md:mx-20 md:text-center"><span class="md:text-3xl md:font-bold">
+                                    12 Cr+</span> km on S1</p>
+                            <p class="md:mx-10 md:text-center">
+                                Distance covered on Ola S1 scooters within a year of launch</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section>
+
+        <div class="bg-black h-fit w-full p-5 ">
+            <div class="md:mx-52 my-20">
+
+
+
+                <p class="text-white text-2xl pt-6 font-bold md:text-4xl md:mb-9">Ola S1. The best scooter ever built
+                </p>
+                <div class="mt-4">
+                    <div class="md:hidden">
+
+                        <div class=" my-1 ">
+                            <img class=""
+                                src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/s1-sport-mob.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class=" my-1 ">
+                            <img class=""
+                                src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/s1-sport-web.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:flex md:space-x-2 md:w-fit md:flex-row-reverse">
+
+                    <div class="flex justify-between relative -my-4 md:justify-end md:space-x-6 md:w-3/4 md:my-0">
+                        <div
+                            class="bg-slate-900 bg-opacity-60  border-t border-x border-gray-300 border-opacity-40 p-2 pr-8 md:w-fit md:p-3 md:opacity-100 md:h-fit ">
+                            <p class="text-white">181 KM</p>
+                            <p class="text-white opacity-60 text-sm">RANGE</p>
+                        </div>
+                        <div
+                            class="bg-slate-900 bg-opacity-60  border-t border-x border-gray-300 border-opacity-40 p-2 pr-8 md:w-fit md:p-3 md:opacity-100 md:h-fit ">
+                            <p class="text-white">116 KM/H</p>
+                            <p class="text-white opacity-60 text-sm ">
+                                TOP SPEED</p>
+                        </div>
+                        <div
+                            class="bg-slate-900 bg-opacity-60  border-t border-x border-gray-300 border-opacity-40 p-2 pr-8 md:w-fit md:p-3 md:opacity-100 md:h-fit ">
+                            <p class="text-white">2.9 SEC</p>
+                            <p class="text-white opacity-60 text-sm">
+                                0 TO 40 KM/H</p>
+                        </div>
+                    </div>
+                    <div>
+
+                        <p class="text-white my-8 md:w-3/4">With fantastic features such as Hyper Mode and Eco Mode, get
+                            an
+                            unbelievable
+                            top
+                            speed of 116 KM/H and an unbeatable range that can reach up to 300 km.</p>
+                        <p class="my-9 text-xl font-semibold text-green-600 flex items-center md:my-3"> More about Ola
+                            S1
+                            <span class="ml-2 "><img class="w-4"
+                                    src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"
+                                    alt=""></span>
+                        </p>
+                    </div>
+                </div>
+                <section>
+                    <div class="md:hidden">
+
+                        <div class=" my-1 ">
+                            <img class=""
+                                src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/pink-banner-mob.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class=" my-1 ">
+                            <img class=""
+                                src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/pink-banner-desktop.png"
+                                alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="my-8 p-3 md:mx-52">
+
+            <p class="font-bold text-[1.6rem] pb-5  w-1/2 md:text-4xl md:w-full md:my-9">Tech for the world, made in
+                India</p>
+            <div class="md:my-14">
+
+                <a href="#">
+                    <div class="flex ">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-futurefactory.png"
+                            class="md:w-[60%]" alt="">
+                        <div class="p-5 bg-gray-200 md:py-32 md:px-10">
+
+                            <p class="flex items-center text-xl font-bold">
+                                Ola Futurefactory <span class="ml-2 "><img class="w-6"
+                                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/arrow-right.svg"
+                                        alt=""></span>
+
+
+                            </p>
+                            <p class="opacity-75 mt-2 text-[0.7 rem] ">
+                                Powered by over 3000 AI-driven robots, the Ola Futurefactory is the world's most
+                                advanced
+                                two-wheeler manufacturing facility.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="md:my-14 md:block hidden">
+
+                <a href="#">
+                    <div class="md:flex md:flex-row-reverse">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/battery-innovation-center.png"
+                            class="md:w-[60%]" alt="">
+                        <div class="p-5 bg-gray-200 md:py-32 md:px-10">
+
+                            <p class="flex items-center text-xl font-bold">
+                                Battery Innovation Centre <span class="ml-2 "><img class="w-6"
+                                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/arrow-right.svg"
+                                        alt=""></span>
+
+
+                            </p>
+                            <p class="opacity-75 mt-2 text-[0.7 rem] ">
+
+                                We're building a state of the art centre with a $500 million investment making it one of
+                                the world's largest most advanced cell R&D facility.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="md:my-14 md:block hidden">
+
+                <a href="#">
+                    <div class="flex ">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/battery-img.png"
+                            class="md:w-[60%]" alt="">
+                        <div class="p-5 bg-gray-200 md:py-32 md:px-10">
+
+                            <p class="flex items-center text-xl font-bold">
+                                India's first
+                                Indigenous Cell <span class="ml-2 "><img class="w-6"
+                                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/arrow-right.svg"
+                                        alt=""></span>
+
+
+                            </p>
+                            <p class="opacity-75 mt-2 text-[0.7 rem] ">
+
+                                We're working towards making our own cell technology to scale faster and revolutionise
+                                the EV segment.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-black h-fit w-full p-5 md:px-52">
+            <p class="text-white text-xl pt-6 font-bold md:text-4xl md:my-6">India's most ambitious car</p>
+            <div class="mt-4">
+                <video muted src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-car-video.mp4" autoplay
+                    loop>
+
+                </video>
+
+            </div>
+
+
+    </section>
+    <section>
+        <div class="m-4 md:mx-52 md:my-10">
+
+            <p class=" text-2xl md:text-4xl font-bold md:my-10"> There's an Ola ride for everyone</p>
+            <div class="md:flex md:space-x-4">
+
+
+
+
+
+
+                <div class="flex my-6 md:flex-col md:items-center">
+                    <img class="w-28 md:w-[280px]"
+                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ride-budget.svg" alt="  ">
+                    <div class="mx-3">
+                        <p class="font-bold text-xl md:my-5 md:text-2xl md:font-semibold md:text-center ">For any budget
+                        </p>
+                        <p class="opacity-80 text-sm md:text-xl md:text-center">
+
+                            From Bikes and Autos to Prime Sedans and Prime SUVs, you will find a ride in your
+                            budget
+                            at your convenience any time.</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="flex my-6 md:flex-col md:items-center">
+                    <img class="w-28 md:w-[280px]"
+                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ride-distance.svg" alt="  ">
+                    <div class="mx-3">
+                        <p class="font-bold text-xl md:my-5 md:text-2xl md:font-semibold md:text-center ">For any
+                            distance</p>
+                        <p class="opacity-80 text-sm md:text-xl md:text-center">
+
+
+
+
+                            Book rides within the city with Daily, or take a trip to your favourite destinations
+                            outside the city with Outstation.</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="flex my-6 md:flex-col md:items-center">
+                    <img class="w-28 md:w-[280px]"
+                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ride-duration.svg" alt="  ">
+                    <div class="mx-3">
+                        <p class="font-bold text-xl md:my-5 md:text-2xl md:font-semibold md:text-center "> For any
+                            duration</p>
+                        <p class="opacity-80 text-sm md:text-xl md:text-center">
+
+
+                            Easily plan a day out without having to worry about conveyance with an hour-based
+                            package from Rental.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="m-4 mt-20 md:invisible md:m-0 md:mt-0 md:h-0">
+            <p class="font-bold text-3xl w-3/4">Making innovations since 2011</p>
+            <div class="my-8"><video muted autoplay loop
+                    src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/for-riders.mp4"></video>
+            </div>
+            <div>
+                <p class=" font-medium mb-5 text-xl">For riders
+                </p>
+                <p class=""> We constantly experiment to come up with industry-first features for our riders that
+                    eventually become a norm.</p>
+            </div>
+        </div>
+        <div class="hidden  md:flex md:mx-52 md:space-x-7">
+            <div class="my-8 w-full"><video muted autoplay loop
+                    src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/for-riders.mp4"></video>
+            </div>
+            <div class=" my-24 px-10">
+                <p class="font-bold text-4xl ">Making innovations since 2011</p>
+                <div class="">
+
+                    <div class="my-10 flex space-x-4">
+                        <div class="bg-green-700 relative h-32 w-2 -mx-5 translate-y-5  duration-[4000]  ">
+
+                        </div>
+                        <div class="bg-green-500 h-32 w-2 ">
+
+                        </div>
+                        <div>
+
+                            <p class=" font-semibold mb-2 text-xl">For riders
+                            </p>
+                            <p class="text-xl"> We constantly experiment to come up with industry-first features for our
+                                riders
+                                that
+                                eventually become a norm.</p>
+                        </div>
+                    </div>
+                    <div class="my-10 flex space-x-4 ">
+                        
+                        <div class="bg-green-700 relative h-32 w-2 -mx-5 ">
+
+                        </div>
+                        <div class="bg-green-500 h-32 w-2 ">
+
+                        </div>
+                        <div>
+                            <p class=" font-semibold mb-2 text-xl">For Drivers
+
+
+                            </p>
+                            <p class="text-xl"> Our drivers get real time stats to help optimize their rides better and
+                                earn more,
+                                straight from the app.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-yellow-50 bg-opacity-80 p-4 pt-8 md:px-52 md:py-20">
+            <p class="mt-3 text-3xl font-bold md:text-4xl md:w-1/2">Experience the smarter way to pay</p>
+            <div class="visible md:hidden">
+                <div class="w-3/4 mb-6">
+
+
+                    <div class="mt-3 flex items-center">
+                        <p class="text-[1.2rem]">Postpaid +
+                        </p>
+                        <p class="text-sm bg-green-300 bg-opacity-20 font-medium p-2 text-green-500">
+                            Trusted by 40 lakh+ users
+                        </p>
+                    </div>
+                    <p class="mt-3 font-semibold text-xl">Buy now, pay later for all spends once a month</p>
+
+                </div>
+
+                <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-shop-img.png" alt="">
+
+                <div class=" flex justify-between py-5 pl-2">
+                    <div class="pr-14">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-1.svg" alt="">
+                        <p class="text-sm py-2">Buy now, pay after 30 days
+
+
+                        </p>
+                    </div>
+                    <div class="pr-14">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-3.svg" alt="">
+                        <p class="text-sm py-2">Shop across 20,000 apps
+
+
+
+
+
+                        </p>
+                    </div>
+                    <div class="pr-14">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-2.svg" alt="">
+                        <p class="text-sm py-2"> Credit limit upto ₹100,000
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="invisible md:visible w-0 h-0 md:w-full md:h-full">
+                <div class=" mt-8 mb-2 flex ">
+                    <div class="w-1/2">
+
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-shop-img.png"
+                            alt="" class="">
+                    </div>
+                    <div class="ml-8 pl-5 w-[500px]">
+
+
+                        <div>
+
+
+
+
+                            <div class=" flex items-center">
+                                <p class="text-xl">Postpaid +
+                                </p>
+                                <p class="text-sm bg-green-300 bg-opacity-20 font-medium p-2 text-green-500">
+                                    Trusted by 40 lakh+ users
+                                </p>
+                            </div>
+                            <p class="mt-3 font-semibold text-2xl ">Buy now, pay later for all spends once a month</p>
+
+                        </div>
+
+
+
+                        <div class=" flex justify-between py-10 pl-2 space-x-7">
+                            <div class="mr-3">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-1.svg"
+                                    alt="" class="w-14 h-14">
+                                <p class="text-sm py-2">Buy now, pay after 30 days
+                                </p>
+                            </div>
+                            <div class="mr-3">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-3.svg"
+                                    alt="" class="w-14 h-14">
+                                <p class="text-sm py-2">Shop across 20,000 apps
+                                </p>
+                            </div>
+                            <div class="mr-3">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insurance-2.svg"
+                                    alt="" class="w-14 h-14">
+                                <p class="text-sm py-2"> Credit limit upto ₹100,000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="bg-black h-[2px] opacity-40 md:hidden">
+            <div class="md:flex ">
+
+                <div class="my-9 w-3/4 md:w-1/2">
+                    <p class="text-lg">Insurance
+
+
+                    </p>
+                    <p class="text-2xl font-semibold">
+
+                        Effective insurances for all your risks</p>
+                </div>
+                <div class="flex space-x-4 mb-6">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-trips.svg" alt="">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-daily.svg" alt="">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-hospicash.svg" alt="">
+                </div>
+            </div>
+            <div class="flex items-baseline space-x-2 my-7 md:absolute md:-my-16 md:mb-5">
+                <p class="text-green-500 font-semibold text-xl">Explore more on the Ola app </p><span><img
+                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"
+                        alt=""></span>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="m-4 my-12 md:mx-52">
+
+            <div class="my-3">
+
+                <p class="text-3xl font-bold my-7 md:text-4xl">Making a difference</p>
+                <div class="md:flex md:space-x-2">
+
+                    <div class="md:w-1/2 md:font-semibold">
+
+                        Ola Foundation, the social welfare arm of Ola, is an outcome of a belief based on
+                        real
+                        interactions, research, and extensive study on the far-reaching impact of enabling and
+                        equipping
+                        people.
+                    </div>
+                    <div class="hidden md:flex">
+                        <div class="mr-12 ">
+                            <p class="font-semibold text-xl"> 1 Lakh+</p>
+                            <p class="opacity-80">Families impacted in FY 2020-21</p>
+                        </div>
+                        <div class="mr-12 ">
+                            <p class="font-semibold text-xl">93 Lakh+</p>
+                            <p class="opacity-80">Meals enabled across India in FY 2020-21</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="md:flex">
+                <div class="flex space-x-2  md:flex-col md:space-x-0">
+                    <div class="mb-2"> <img class="object-none h-[200px] "
+                            src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/womens.png" alt=""></div>
+                    <div class="mb-2 "><img class="object-none h-[200px] md:mr-2 "
+                            src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/donating.png" alt=""></div>
+
+                </div>
+                <div class=""> <img class=" object-none h-[300px]  w-full md:h-[410px] md:w-[400px]"
+                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/mother-son.png" alt=""></div>
+
+            </div>
+
+            <div class="flex justify-between my-6 md:hidden">
+
+
+
+
+
+                <div class="mr-12 ">
+                    <p class="font-semibold text-xl"> 1 Lakh+</p>
+                    <p class="opacity-80">Families impacted in FY 2020-21</p>
+                </div>
+                <div class="mr-12 ">
+                    <p class="font-semibold text-xl">93 Lakh+</p>
+                    <p class="opacity-80">Meals enabled across India in FY 2020-21</p>
+                </div>
+            </div>
+            <div class="flex items-baseline space-x-2 my-7">
+                <p class="text-green-500 font-semibold text-xl">Explore more on the Ola app </p><span><img
+                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"
+                        alt=""></span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class=" p-3 bg-yellow-100 bg-opacity-30  md:px-52 md:my-6 md:h-fit">
+            <p class="text-3xl font-bold w-[60%] md:text-4xl md:py-4 ">Recent from our blogs</p>
+            <div class="flex space-x-3 justify-between">
+                <div class="md:w-[200px] ">
+                    <img class="mt-5 " src="https://www.olacabs.com/webstatic/img/new-images/end_for_ice_age.jpeg"
+                        alt="">
+                    <p class="text-xl font-medium my-4 ml-2">2022: Beginning of the End for ICE Age</p>
+                    <div class="flex space-x-1  items-baseline ml-2 mb-10">
+                        <p class="text-green-500 font-medium">Know more</p>
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="md:w-[200px]  hidden md:block">
+                    <img class="mt-5 " src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/pli-agreement.png"
+                        alt="">
+                    <p class="text-xl font-medium my-4 ml-2"> Ola signs PLI agreement</p>
+                    <div class="flex space-x-1  items-baseline ml-2 mb-10">
+                        <p class="text-green-500 font-medium">Know more</p>
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="md:w-[200px]  hidden md:block">
+                    <img class="mt-5 " src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-to-invest.png"
+                        alt="">
+                    <p class="text-xl font-medium my-4 ml-2">Ola to invest $500 million</p>
+                    <div class="flex space-x-1  items-baseline ml-2 mb-10">
+                        <p class="text-green-500 font-medium">Know more</p>
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="md:w-[200px]  hidden md:block">
+                    <img class="mt-5 "
+                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/indigenous-cell.png" alt="">
+                    <p class="text-xl font-medium my-4 ml-2">India's first indigenous cell</p>
+                    <div class="flex space-x-1  items-baseline ml-2 mb-10">
+                        <p class="text-green-500 font-medium">Know more</p>
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/green-arrow-right.svg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section>
+        <div class="m-3 mb-14 md:px-52 md:my-10">
+
+            <div class="pt-6 ">
+                <p class="text-2xl font-bold md:text-4xl ">Download our apps</p>
+            </div>
+            <div class="md:flex md:space-x-4">
+                <div
+                    class="my-3 bg-gradient-to-t from-[#D8DDE6] to-[#F4F8FC] flex p-5 md:flex md:space-y-3 md:flex-col md:w-1/3">
+                    <div>
+
+                        <img class="rounded-2xl md:my-3"
+                            src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-ev.svg" alt="">
+                    </div>
+                    <div class="ml-4">
+
+                        <div class="flex items-baseline justify-between ">
+
+                            <p class="font-bold md:text-xl md:my-2">
+
+                                Ola Electric
+                            </p>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/right-arrow.svg" alt="">
+                        </div>
+                        <p class="opacity-80 ">
+
+                            Connect, control and communicate with your Ola S1
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="my-3 bg-gradient-to-t from-[#E0E6D8] to-[ #F9FCF4] flex p-5 md:flex md:space-y-3 md:flex-col md:w-1/3">
+                    <div>
+
+                        <img class="rounded-2xl md:my-3"
+                            src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/olalogo.svg" alt="">
+                    </div>
+                    <div class="ml-4">
+
+                        <div class="flex items-baseline justify-between ">
+
+                            <p class="font-bold md:text-xl md:my-2">
+
+                                Ola
+
+
+                            </p>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/right-arrow.svg" alt="">
+                        </div>
+                        <p class="opacity-80 ">
+
+                            Book cabs, buy insurance, access Ola Money and much more
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="my-3 bg-gradient-to-t from-[#E0E6D8] to-[ #F9FCF4] flex p-5 md:flex md:space-y-3 md:flex-col md:w-1/3">
+                    <div>
+
+                        <img class="rounded-2xl md:my-3"
+                            src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/ola-driver.svg" alt="">
+                    </div>
+                    <div class="ml-4">
+
+                        <div class="flex items-baseline justify-between ">
+
+                            <p class="font-bold md:text-xl md:my-2">
+
+                                Ola Driver
+
+                            </p>
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/right-arrow.svg" alt="">
+                        </div>
+                        <p class="opacity-80 ">
+
+
+                            Register as a driver to take rides, see your earnings and incentives
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="bg-[#D8DDE6] bg-opacity-40 my-3 p-5  md:px-52">
+            <div class="md:hidden">
+
+
+                <p class="font-bold text-3xl my-5">Stay upto date</p>
+                <input type="text" name="" id="" placeholder="Email"
+                    class=" p-4 w-full outline-none bg-white border-1 border-black border-opacity-20">
+                <div class="flex">
+                    <button
+                        class=" p-4 my-7 w-full h-16  border-l-2      border-b-2 border-b-green-400    border-green-500 bg-gray-900 flex space-x-3 items-center">
+                        <span class="text-white font-semibold"> SUBSCRIBE TO </span> <SPan
+                            class="text-green-500 font-semibold">NEWSLETTER</SPan>
+                        <span class="text-end"><img
+                                src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/forward-arrow.svg" alt=""
+                                srcset=""></span>
+
+                    </button>
+                </div>
+                <div class="footer">
+
+                    <div class="mt-10">
+                        <div>
+                            <p>Book a cab</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+                            <p>Drive with us</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+                            <p> Outstation</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+                            <p> Rental</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+                            <p> Ola Money</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+                            <p> Corporate</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="my-10">
+                        <div>
+
+
+                            <p> About Us</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+
+
+                            <p> Contact Us</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+
+
+                            <p> Support</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+
+
+                            <p> Careers</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+
+
+                            <p> Media Centre</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                    </div>
+                    <div class="my-10">
+
+
+
+                        <div>
+
+
+                            <p> Ola S1</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+
+
+                            <p> Futurefactory</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+                        <div>
+
+
+                            <p> Electric</p>
+                            <hr class="bg-black h-[2px] opacity-20 my-3">
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <div class="flex space-x-9 my-3">
+                            <p class="underline opacity-60">Notices </p>
+                            <p class="underline opacity-60">Privacy Policy</p>
+                            <p class="underline opacity-60">Terms of Service</p>
+                        </div>
+                        <div class="flex justify-between my-5">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/OLA.svg" alt="">
+                            <div class="flex space-x-5">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insta.svg" alt="">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/youtube.svg" alt="">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/twitter.svg" alt="">
+                            </div>
+                            <select name="cars" id="cars" class="w-24">
+                                <option value="volvo">India
+
+
+                                </option>
+                                <option value="saab"> AU</option>
+                                <option value="opel"> UK</option>
+                                <option value="audi"> NZ</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="opacity-75 text-sm mt-6">Copyright © 2022 Ola Electric Mobility Pvt Ltd. All
+                                Rights
+                                Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block py-5">
+                <div class="flex justify-between">
+                    <div class=""><img class="my-5"
+                            src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/OLA.svg" alt="">
+                        <div class="flex space-x-6">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insta.svg" alt="">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/youtube.svg" alt="">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/twitter.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <p>Book a cab</p>
+                        <p>Drive with us</p>
+                        <p> Outstation</p>
+                        <p> Rental</p>
+                        <p> Ola Money</p>
+                        <p> Corporate</p>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <p> About Us</p>
+                        <p> Contact Us</p>
+                        <p> Support</p>
+                        <p> Careers</p>
+                        <p> Media Centre</p>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <p> Ola S1</p>
+                        <p> Futurefactory</p>
+                        <p> Electric</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-xl italic my-3">Stay upto date</p>
+                        <input type="text" name="" id="" placeholder="Email"
+                            class=" p-3 w-full outline-none bg-white border-1 border-black border-opacity-20">
+                        <div class="flex">
+                            <button
+                                class=" p-4 my-4 w-full h-16  border-l-2      border-b-2 border-b-green-400    border-green-500 bg-gray-900 flex space-x-3 items-center">
+                                <span class="text-white font-semibold"> SUBSCRIBE TO </span> <SPan
+                                    class="text-green-500 font-semibold">NEWSLETTER</SPan>
+                                <span class="text-end"><img
+                                        src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/forward-arrow.svg"
+                                        alt="" srcset=""></span>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="bg-black h-[2px] opacity-20 mt-4 -mx-52">
+                <div class="flex items-center justify-between">
+                    <p class="opacity-60 text-sm mt-6">Copyright © 2022 Ola Electric Mobility Pvt Ltd. All
+                        Rights
+                        Reserved.</p>
+                    <div class="flex space-x-2">
+                        <div class="flex space-x-3 mt-6">
+                            <p class="underline opacity-60">Notices </p>
+                            <p class="underline opacity-60">Privacy Policy</p>
+                            <p class="underline opacity-60">Terms of Service</p>
+                        </div>
+                        <select name="cars" id="cars" class="w-24 mt-6 bg-[#D8DDE6] bg-opacity-30 text-sm">
+                            <option value="volvo">India
+                            </option>
+                            <option value="saab"> AU</option>
+                            <option value="opel"> UK</option>
+                            <option value="audi"> NZ</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+    <!-- Javascript Code -->
+    <script>
+
+      
+        window.onload = function() {
+  document.getElementById("start").focus();
+};
+
+        var menu = document.getElementById('menu');
+        function toggleMenu() {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('h-80');
+        }
+var text = document.getElementById('text');
+var text2 = document.getElementById('text2');
+        function kuchtohoga(e){
+            if(e=='Outstation'){
+text2.innerHTML = 'Outstation cabs';
+text.placeholder= 'Enter Destination'
+
+            }
+            else if(e=='Rental'){
+text2.innerHTML = 'Rental cabs';
+text.placeholder= 'Select Package'
+            }
+            if(e=='Daily'){
+text2.innerHTML = 'Ola cabs';
+text.placeholder= 'Enter Destination'
+
+            }
+        }
+    </script>
+</body>
+
+</html>
